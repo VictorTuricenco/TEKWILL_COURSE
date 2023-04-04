@@ -9,7 +9,7 @@ public class HomeWork5 {
             System.out.println(Months.values()[index]);
         }
 
-            System.out.println(Weekday.THURSDAY.isHoliday());
+            System.out.println(Weekday.THURSDAY.isWeekday());
 
 
         String str = "true";
@@ -33,5 +33,5 @@ public class HomeWork5 {
         String str6 = "2354.56f";
         float fl = Float.parseFloat(str6);
 
-    }
+     }
 }
