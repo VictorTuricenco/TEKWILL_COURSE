@@ -10,17 +10,14 @@ public enum Weekday {
     SATURDAY,
     SUNDAY;
 
-        public boolean isWeekday() {
-            for (int index = 0; index != Weekday.values().length; index++)
-                return Weekday.values()[index] != SATURDAY && Weekday.values()[index] != SUNDAY;
-            return false;
-        }
+    public boolean isWeekday() {
+        return this != SATURDAY && this != SUNDAY;
 
-        public boolean isHoliday() {
-            for (int index = 0; index != Weekday.values().length; index++)
-                return Weekday.values()[index] == SATURDAY || Weekday.values()[index] == SUNDAY;
-            return false;
-        }
+    }
+
+    public boolean isHoliday() {
+        return this == SATURDAY || this == SUNDAY;
+    }
 }
 
 
