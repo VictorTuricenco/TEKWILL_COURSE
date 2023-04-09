@@ -11,7 +11,8 @@ public enum Weekday {
     SUNDAY;
 
     public boolean isWeekday() {
-        return this != SATURDAY && this != SUNDAY;
+
+       return this != SATURDAY && this != SUNDAY;
 
     }
 
