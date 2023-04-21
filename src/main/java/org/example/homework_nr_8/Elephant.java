@@ -13,13 +13,17 @@ public class Elephant extends Herbivore implements Animal {
 
     public String ears;
 
+    public boolean longNose;
 
-    public Elephant(String type, String area, String specie, Integer nrOfLegs, String ears) {
+
+    public Elephant(String type, String area, String specie, Integer nrOfLegs, String ears, boolean longNose) {
         this.type = type;
         this.area = area;
         this.specie = specie;
         this.nrOfLegs = nrOfLegs;
         this.ears = ears;
+        this.longNose = longNose;
+
     }
 
 
@@ -44,6 +48,12 @@ public class Elephant extends Herbivore implements Animal {
     }
 
     @Override
+    public void isItElephant() {
+        if (longNose == true) {
+            System.out.println("This is definitely an elephant!");
+        }
+    }
+
     public String toString() {
         return "Elephant{" +
                 "type='" + type + '\'' +

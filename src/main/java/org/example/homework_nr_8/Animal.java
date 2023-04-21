@@ -13,5 +13,5 @@ public interface Animal {
 
     void test();
 
-    String toString();
+   void isItElephant ();
 }
