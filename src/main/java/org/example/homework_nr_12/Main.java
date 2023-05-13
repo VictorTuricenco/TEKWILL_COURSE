@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         List<Employee> employeeList = new ArrayList<>(Arrays.asList(
                 new Employee("Dmitri", "Timotin", 38, false, false),
@@ -47,9 +47,9 @@ public class Main {
                 .findFirst();
 
         if (optionalEmployee.isPresent())
-            System.out.println(optionalEmployee.get());
-        else
-            System.out.println("Employee was not found!");
+            System.out.println(optionalEmployee);
+                    else System.out.println(optionalEmployee.orElseThrow(() -> new RuntimeException("Employee was not found")));
+
 
         System.out.println("_______________________________");
 
